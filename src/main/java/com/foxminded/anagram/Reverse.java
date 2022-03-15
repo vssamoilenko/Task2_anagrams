@@ -12,7 +12,7 @@ public class Reverse {
         List<String> words = Arrays.stream(text.split(" ")).collect(Collectors.toList());
         outputText = words.stream()
                 .map(this::convertingTheWord)
-                .collect (Collectors.joining(" "));
+                .collect(Collectors.joining(" "));
         return outputText;
     }
 
@@ -30,7 +30,7 @@ public class Reverse {
             isBackPositionCharLetter = Character.isLetter(inputWordBuild[indexBack]);
             if (isStraightPositionCharLetter) {
                 if (isBackPositionCharLetter) {
-                    swap( inputWordBuild, indexStraight, indexBack);
+                    swap(inputWordBuild, indexStraight, indexBack);
                     indexStraight++;
                 }
                 indexBack--;
